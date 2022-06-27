@@ -14,12 +14,12 @@ function Chatbox() {
   return (
     
     <div className="App">
-        <dix className="chatbox">
+       
             <Header />
             <Chat list={input}
              />
             <Footer inputValue={(input)=> {msg(input)}} />
-        </dix>
+       
     </div>
   );
 }
