@@ -6,20 +6,25 @@ import { FaPlus }  from 'react-icons/fa'
 
 function Footer({inputValue}) {
   const [input, setInput] = React.useState('')
-
+  
+  const onKeyDownHandler = e => {
+    if (e.keyCode === 13) {
+      inputValue(input)
+    }
+  };
  
 
     return (
       
       <div className="footer">
-        <table  className=''>
+        <table  style={{"margin-right": "10px"}}>
           <tr>  
           {/* value={text} onChange={setText} cleanOnEnter  onEnter={handleOnEnter} placeholder="Type a message" */}
           <th style={{width: "8%", textAlign:"right", color: "gray"}}> 
           <FaPlus />
           </th>
           <th style={{width: "80%"}}>
-            <InputEmoji onChange={setInput} onK  value={input} placeholder="Type a message" className="input_box"/>
+            <InputEmoji onChange={setInput} onKeyDown={onKeyDownHandler}  value={input} placeholder="Type a message" className="input_box"/>
           </th>
           <th style={{width: "8%"}}>
             <button className='submitbutton' onClick={(event) => {inputValue(input)}}><IoPaperPlane/></button>

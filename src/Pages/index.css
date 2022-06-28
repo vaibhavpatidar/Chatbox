@@ -50,15 +50,23 @@ body {
     width: 10%;
 }
 
+
+
+
 .chatbox{
     height: 335px;
     display: block;
     overflow-y: scroll;
-    margin-top: 10px;
+    padding-top: 10px;
 }
 
 .react-emoji-picker--wrapper{
-    overflow:auto;
+    overflow:scroll;
+}
+
+.react-input-emoji--input {
+    height: 10px;   
+overflow-y : scroll;
 }
 
 .footer{
@@ -223,10 +231,10 @@ table{
 
  .input_box{
     border: none;
+    overflow-x: scroll;
  }
 
  .footer{
-    border: 1px solid lightgray;
     margin-bottom: -10px;
     border-bottom-style: none; 
     border-radius: 20px;
