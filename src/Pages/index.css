@@ -66,7 +66,7 @@ body {
 
 .react-input-emoji--input {
     height: 10px;   
-overflow-y : scroll;
+overflow-x : scroll;
 }
 
 .footer{
@@ -81,74 +81,8 @@ table{
 }
 
 
-
-.itemright{
-    display: block;
-    font-size: 15px;
-    padding: 2px;
-    margin-top: 10px;
-    margin-right: 20px;
-}
-
-.itemleft{
-    display: block;
-    font-size: 15px;
-    padding: 2px;
-    margin-top: 10px;
-    margin-right: 50px;
-}
-
-.msgleft{
-    display: block;
-    /* float: left; */
-  
-    padding: 10px 15px 10px 0px;
-    color: black;
-    border-radius: 10px;
-    /* margin-top: 20px; */
-    margin-left: 20px;
-
-}
-
-.asr{
-    background-color:  #661aff;
-    float: right;
-    margin-right: -10px;
-    padding: 5px;
-  }
-
-.msgrigth{
-    display: block;
-    padding: 10px 0px 10px 15px;;
-    color: white;
-    border-radius: 10px;
-    margin-top: 20px;
-}
-
-.chatrightprofile{
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    float:right;
-    margin-top: -20px;
-    margin-right: -20px;
-    border: 1px solid  #661aff;
-    padding: 2px;
-}
-
-.chatleftprofile{
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    float:left;
-    margin-top: -15px;
-    margin-left: -20px;
-    border: 0px solid  #661aff;
-    padding: 2px;
-}
-
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 0px;
   }
   
   /* Track */
@@ -163,9 +97,6 @@ table{
     border-radius: 10px;
   }
 
-  .as{
-    background-color: #f2f2f2;
-  }
 
   
 
@@ -231,7 +162,8 @@ table{
 
  .input_box{
     border: none;
-    overflow-x: scroll;
+    overflow-y: scroll;
+    overflow: hidden;
  }
 
  .footer{
@@ -244,8 +176,19 @@ table{
 
  .submitbutton{
     border-radius: 50%;
+    border: 0px;
     font-size: 18px;
-    padding-top: 5px;
+    text-align: center;
     color: white;
+    padding-top: 7px;
     background-color: #661aff ;
+ }
+
+ .try{
+    width: 0px;
+    height: 0px;
+ }
+
+ input{
+    display:none;
  }

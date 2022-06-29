@@ -7,9 +7,10 @@ import './index.css'
 function Chatbox() {
   const [input, setInput] = React.useState([])
 
-  const msg =(input) => {
-    let data={text: input, isbot: 0}
-    setInput(input => [...input, data])
+  const msg =(text) => {
+    let data={text: text, isbot: 0}
+    if(text.length>0){
+    setInput(input => [...input, data])}
   }
   return (
     
@@ -18,7 +19,7 @@ function Chatbox() {
             <Header />
             <Chat list={input}
              />
-            <Footer inputValue={(input)=> {msg(input)}} />
+            <Footer inputValue={(text)=> {msg(text)}} />
        
     </div>
   );
